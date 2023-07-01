@@ -1,0 +1,10 @@
+server:
+  port: ${port:8881}
+
+xxl:
+  job:
+    admin:
+      addresses: http://192.168.150.1:8080/xxl-job-admin
+    executor:
+      appname: xxl-job-executor-sample
+      port: ${executor.port:9999}
